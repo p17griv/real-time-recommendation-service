@@ -1,2 +1,2 @@
-# real-time-recommendation-server
-A near real-time python recommendation system that can be integrated in any application.
+## Real-Time Recommendation Server
+This project is a complete solution for applications that want to provide accurate and up-to-date recommendations to their users. Recommendations are produced in near real-time, based on changes of users' preferances and applications' content.
