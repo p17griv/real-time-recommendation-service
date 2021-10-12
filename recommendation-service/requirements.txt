@@ -1,0 +1,6 @@
+implicit
+kafka-python
+numpy
+pandas
+scipy
+Flask
