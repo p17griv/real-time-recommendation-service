@@ -1,6 +1,6 @@
 ## Real-Time Recommendation Service
 
-This project is a complete solution for applications that want to provide accurate and up-to-date recommendations to their users. Recommendations are produced in near real-time, based on changes of users' preferances and applications' content.
+"Real-Time Recommendation Service" is a complete solution for applications that aim to provide accurate and up-to-date recommendations to their users, based on changes of their preferances and changes of application's content. This project is part of the thesis "Stream Processing for Near Real-Time Recommendation System".
 
 ### License
 
