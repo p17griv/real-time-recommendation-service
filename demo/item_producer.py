@@ -1,6 +1,9 @@
 import random
 import json
 import time
+import sys
+
+sys.path.insert(0, '../recommendation-service')
 from kafka_connect import connect_kafka_producer, connect_kafka_consumer
 
 
@@ -14,7 +17,7 @@ def publish_item(topic_name, key, number_of_items):
     for msg in consumer:
         existing_items.append(str(msg.value)[2:].replace("'", ""))
 
-    with open('../News_Category_Dataset_sample.json') as file:
+    with open('news_category_dataset_sample.json') as file:
         news = file.readlines()  # Load JSON's lines into a list
         for i in range(0, number_of_items):
             try:

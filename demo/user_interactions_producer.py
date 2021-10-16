@@ -1,5 +1,8 @@
 import random
 import time
+import sys
+
+sys.path.insert(0, '../recommendation-service')
 from kafka_connect import connect_kafka_producer, connect_kafka_consumer
 
 
