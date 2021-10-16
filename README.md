@@ -20,7 +20,7 @@ In order the applications to get recommended items whenever is necessary, the sy
 
 All of the system's functionality, that described previously, is shown in the following architecture diagram.
 
-![System's Architecture Diagram](img/Architecture Diagram.png)
+![System's Architecture Diagram](img/architecture_diagram.png)
 
 ### License
 
