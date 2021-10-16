@@ -18,7 +18,7 @@ For the purpose of calculating recommendations in real-time based on the latest 
 
 In order the applications to get recommended items whenever is necessary, the system contains a HTTP Server (developed with Flask web framework) through which receives requests (GET) for recommendations. With a request, applications define the desired target user (user's id) and the number of recommended items that will be returned.
 
-All of the system's functionality, that described previously, is shown in the following architecture diagram.
+##### All of the system's functionality, that described previously, is shown in the following architecture diagram:
 
 ![System's Architecture Diagram](img/architecture_diagram.png)
 
