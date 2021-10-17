@@ -1,6 +1,6 @@
 ## Real-Time Recommendation Service
 
-"Real-Time Recommendation Service" is a complete solution for applications that aim to provide accurate and up-to-date recommendations to their users, based on changes of their preferences and changes of application's content. This project is part of the thesis "Stream Processing for Near Real-Time Recommendation System".
+"Real-Time Recommendation Service" is a simple and complete solution for applications that aim to provide accurate and up-to-date recommendations to their users, based on changes of their preferences and changes of application's content. This project is part of the thesis "Stream Processing for Near Real-Time Recommendation System".
 
 ### How It Works
 
@@ -22,9 +22,44 @@ In order the applications to get recommended items whenever is necessary, the sy
 
 ![System's Architecture Diagram](img/architecture_diagram.png)
 
-### Deployment
+### Deployment Guide
 
+Instructions for setting up recommendation service on a Linux OS with Python 3 installed:
 
+1. **Set up and run Apache Kafka:**
+  - Follow Step 1 & Step 2 of Apache Kafka [Quickstart Guide](https://kafka.apache.org/quickstart).
+2. **Download project files:** Run ``` git clone https://github.com/p17griv/real-time-recommendation-service.git ``` into a directory in order to download the project.
+3. **Create a python virtual environment inside the directory:** (optional) Run ``` python3 -m venv venv ``` to create "venv" virtual environment and ``` source venv/bin/activate ``` to activate it.
+4. **Install python dependencies:**
+  - Move to "recommendation-service" directory: ``` cd recommendation-service ```.
+  - Run ``` pip install -r requirements.txt ```.
+5. **Change Kafka address in "kafka_connect.py" file's [line 7](https://github.com/p17griv/real-time-recommendation-service/blob/4973e6118d4cba50bfd688bbf3ca3e909eddfb50/recommendation-service/kafka_connect.py#L7) and [line 17](https://github.com/p17griv/real-time-recommendation-service/blob/4973e6118d4cba50bfd688bbf3ca3e909eddfb50/recommendation-service/kafka_connect.py#L17).
+6. **Modify your application's code in order to publish user-item interactions:**
+  - Interactions should have the following form: "userid:itemid".
+  - Interactions must be published on a topic that it's called "interactions".
+7. **Run "[model builder](recommendation-service/model_builder.py)" program with the apropriate parameters:** ``` python3 modelbuilder.py [interactions_topic] [retrain_frequency] [window_length]```.
+  - Run ``` python3 modelbuilder.py -h ``` for more information about the parameters (optional).
+8. **Start recommendation server module:** ``` python3 recommender.py ```.
+9. Modify your application's code in order to send GET requests for recommendations (using server's address) with target user's id and desired number of recommended items, as parameters and receive the response (JSON formatted string).
+
+**Note**
+Apache Kafka can be also deployed separately from the recommendation system or in cloud (as well as recommendation system).
+
+### Demo
+
+For demonstration purposes, "Real-Time recommendation Service" is able to run without the existence of a real application, using some secondary programs.
+
+1. Repeat the following instructions included in [Deployment Guide]():
+  - Instruction 1: Start Apache Kafka (Step 2. only) (if its not already started).
+  - Instruction 3: Activate "venv" virtual environment (if created one previously and not already activated).
+  - Instruction 7: Run "[model_builder.py](recommendation-service/model_builder.py)" program.
+  - Instruction 8: Run "[recommender.py](recommendation-service/recommender.py)" program.
+
+![System's Architecture Diagram](img/architecture_diagram.png)
+
+### Disclaimer
+
+### Contributions
 
 ### License
 
