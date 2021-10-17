@@ -2,11 +2,11 @@
 
 "Real-Time Recommendation Service" is a simple and complete solution for applications that aim to provide accurate and up-to-date recommendations to their users, based on changes of their preferences and changes of application's content. This project is part of the thesis "Stream Processing for Near Real-Time Recommendation System".
 
-### [How It Works](https://github.com/p17griv/real-time-recommendation-service/wiki/How-It-Works)
+## [How It Works](https://github.com/p17griv/real-time-recommendation-service/wiki/How-It-Works)
 
-### [Deployment Guide](https://github.com/p17griv/real-time-recommendation-service/wiki/Deployment-Guide)
+## [Deployment Guide](https://github.com/p17griv/real-time-recommendation-service/wiki/Deployment-Guide)
 
-### [Demo](https://github.com/p17griv/real-time-recommendation-service/wiki/Demo)
+## [Demo](https://github.com/p17griv/real-time-recommendation-service/wiki/Demo)
 
 ### Disclaimer
 
