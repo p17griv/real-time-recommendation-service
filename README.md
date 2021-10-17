@@ -51,7 +51,7 @@ For demonstration purposes, "Real-Time recommendation Service" is able to run wi
 
 ##### Demos's functionality, that described previously, is shown in the following architecture diagram:
 
-![System's Architecture Diagram](img/architecture_diagram.png)
+![Demos's Architecture Diagram](img/architecture_diagram_demo.png)
 
 ### Setting Up Demo
 
