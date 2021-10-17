@@ -74,7 +74,7 @@ For demonstration purposes, "Real-Time recommendation Service" is able to run wi
 
 Contributions to this project are released to the public under the [project's open source license](LICENSE.md).
 
-Feel free to contribute to "Real-Time Recommendation Service" by submitting pull requests that fixes, expands or improves system's functionalities.
+Feel free to contribute to "Real-Time Recommendation Service" by submitting pull requests that fixes, expands or improves system's functionalities. Just make sure you have forked this repo and you are working on a new branch.
 
 ### License
 
